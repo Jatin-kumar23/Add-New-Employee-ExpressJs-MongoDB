@@ -9,7 +9,8 @@ var express               = require("express"),
 
 
 mongoose.connect("mongodb+srv://admin:Adminjatin99@cluster0.4i7oh.mongodb.net/<dbname>?retryWrites=true&w=majority",
-{ useUnifiedTopology: true }
+{   useUnifiedTopology: true,
+    useNewUrlParser: true}
 );
 
 var app = express(); 
