@@ -8,7 +8,8 @@ var express               = require("express"),
     passportLocalMongoose = require("passport-local-mongoose")
 
 
-mongoose.connect("mongodb://localhost/jatin's-website");
+mongoose.connect("mongodb+srv://admin_jatin:<jatinkumar>@cluster0.4i7oh.mongodb.net/<dbname>?retryWrites=true&w=majority");
+
 var app = express(); 
 app.set('view engine', 'ejs'); 
 app.use(express.static("public"))
