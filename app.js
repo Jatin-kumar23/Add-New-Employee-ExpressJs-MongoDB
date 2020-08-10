@@ -8,7 +8,7 @@ var express               = require("express"),
     passportLocalMongoose = require("passport-local-mongoose")
 
 
-mongoose.connect("mongodb+srv://admin:Adminjatin99@cluster0.4i7oh.mongodb.net/<dbname>?retryWrites=true&w=majority",
+mongoose.connect("mongodb+srv://admin:Adminjatin99@cluster0.4i7oh.mongodb.net/test?retryWrites=true&w=majority",
 {   useUnifiedTopology: true,
     useNewUrlParser: true}
 );
