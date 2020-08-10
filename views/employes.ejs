@@ -1,0 +1,30 @@
+<%- include ('header') %> 
+
+<div id="container">
+    <h1 class="center h-primary">Our Employes</h1>
+ </div>
+ <div id="employes">
+    <% employes.forEach(function(addnew){ %>
+        <div class="box">
+                <img src="<%= addnew.photo %>">
+                <div class="h-secondary center">
+                   <h4>Name: <%= addnew.name %></h3>
+                </div>
+                <div class="h-secondary center">
+                    <h4>(<%= addnew.skills %>)</h3>
+                </div>
+                <div class="h-secondary center">
+                    <h4>Contact: <strong>  <%= addnew.email %> </strong></h3>
+                </div>
+            <!-- <p>
+                   <a href="/employes/<%= addnew._id %>"><p class="center profile-size"> More Info </p></a>
+            </p> -->
+        </div>
+    <% }); %> 
+    </div>
+</section>
+
+<div id="add-employes" > <a href="/newemploye" class="btn center" >Add new Employes </a></div>
+
+<section>
+<%- include ('footer') %> 

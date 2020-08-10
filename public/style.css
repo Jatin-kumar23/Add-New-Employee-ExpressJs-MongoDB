@@ -1,0 +1,285 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* home page */
+/* ================ */
+#navbar{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* background-color: black; */
+	padding: 0px 0px;
+	position: sticky;
+}
+
+#logo{
+	margin: -6px 8px;
+    padding: 9px 6px;
+}
+#logo img{
+	height: 45px;
+	width: 45px;
+    margin: 0px 22px;
+    padding: 4px 0px;
+}
+#navbar .nav{
+	display:flex;
+	align-items: center;
+	list-style-type: none;
+}
+#navbar .nav2{
+	display:flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	margin-left: auto;
+	
+}
+#navbar::before{
+	content: "";
+	background-color: black;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: -1;
+}
+#navbar ul li{
+		list-style: none;
+		font-size: 1.5rem;
+		margin: -4px -1px;
+		padding: 6px 8px;
+}
+#navbar ul li a{
+	color: white;
+	display: block;
+	padding: 10px 10px;
+	text-decoration: none;
+	border-radius: 15px;	
+}
+#navbar ul li a:hover{
+	color: black;
+	background-color: white ;	
+}
+
+#home{
+	display: flex;
+	flex-direction: column;
+	padding-top: 0;
+	height: 450px;
+	justify-content: center;
+	align-items: center;
+	background-size: 100%;
+}
+#home::before{
+	content: "";
+	background: url('/images/homeimg.jpg') no-repeat center center/cover;
+	background-attachment: fixed;
+	position: absolute;
+	background-size: cover;
+	height: 450px;
+	width: 100%;
+	opacity: 1;
+	z-index: -1;
+}
+#home h1{
+	color: black;
+	text-align: center;
+}
+#home p{
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+	padding-bottom: 50px;
+
+}
+
+.btn{
+	
+	padding: 6px 20px;
+	font-size: 1.5em;
+	border-radius: 10px;
+	color: white;
+	background-color: red;
+	cursor: pointer;
+	border:none;
+	outline: none;
+	text-decoration: none;
+}
+#services {
+	display: flex;
+	flex-direction: row;
+	margin: 20px 20xp;
+	padding: 30px 0px;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+}
+.box{
+	border: 2px solid black;
+	border-radius: 35px;
+	margin: 25px 30px;
+	width: 45%;
+	background-color: #f2f2f2;
+	padding-bottom: 10px;
+}
+
+.box img{
+	height: 100px;
+	padding: 20px 20px;
+	display: block;
+	margin: auto;	
+}
+#add-employes{
+	text-align: center;
+	padding: 50px 10px	;
+	padding-top: 10px;
+	
+}
+#profile{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto;
+	margin-top: 50px;
+	width: 60%;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 50px 50px;		
+	width: 70%;
+	padding-bottom: 20px;
+	padding-top: 0;
+}
+#profile img{
+	padding: 25px 10px;
+	margin: 10px 10px;
+	height: 200px;
+	width: 200px;
+}
+#footer{
+	background-color: black;
+	color: white;
+	padding: 15px 0;
+	text-align: center;
+	position: relative;
+	  right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+
+	/* position: fixed	; */
+}
+/* contact page */
+#contact{
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto;
+	margin-top: 50px;
+	padding: 50px 38px;
+	padding-top:2px;
+	width: 60%;
+	padding-bottom: 17px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	
+}
+#loginform{
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto;
+	margin-top: 50px;
+	width: 60%;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 50px 50px;
+	width: 30%;
+	padding-bottom: 20px;
+}
+
+.loginform{
+	margin: 18px 10px;
+}
+#container{
+	display:flex;
+    align-items: center;
+    justify-content: center;
+	border-radius: 5px;
+	background-color: #dddcdc;
+	height: 225px;
+	/* padding: 50px 0; */
+	
+}
+
+#submit-btn{
+	padding: 20px;
+	margin: 10px;
+}
+#employes{
+	display: flex;
+	flex-direction: column;
+	/* margin: 20px 20px; */
+	padding: 30px 0px;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+}
+#employes .box{
+	
+}
+/* ================ */
+.h-contact{
+	
+	font-size: 27px;
+    margin: 18px 10px;
+    padding: 5px 10px;
+    margin-left: 1px;
+    padding-left: 0;
+}
+.form{
+	
+	text-decoration: black;
+	padding:10px 6px;
+	color: black	;
+}
+
+.h-primary{ 
+	font-size: 3.8em;
+	padding: 26px 16px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+}
+.h-secondary{
+	font-size: 2em;
+	font-family: 'Merriweather', serif;
+
+	/* font-weight: 100; */
+}
+.p-profile{
+	padding: 12px 13px;
+	margin: 10px 10px;
+}
+.name{
+	font-size: 40px;
+	color: red;
+	padding: 0px 10px;
+}
+.main{
+	color: white;
+}
+.center{
+	text-align: center;	
+	margin: 0 auto;
+	padding: 10px 17px;
+
+}
+.profile-size{
+	padding: 14px 14px;
+}
+.apply{
+	text-align: left;
+}
+.strong{
+	font-weight: 300;
+}

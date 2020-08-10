@@ -1,0 +1,21 @@
+<%- include ('header') %> 
+<div id="container">
+    <h1 class="center h-primary">If you want to join our team, Fill this form </h1>
+</div>
+
+    <form id="contact" action="/employes"  method="POST">
+        <h1 class="h-contact" >  Name:</h1>      <input class="form"  type="text" name="name" placeholder="Enter Name" required>
+        <h1 class="h-contact" >  Email:</h1>     <input class="form"  type="email" name="email" placeholder="Enter Email Id"required>
+        <h1 class="h-contact" >  Phone No.:</h1> <input  class="form" type="text" maxlength="10" pattern="\d{10}" name="phone" placeholder="Enter phone numer"required>
+        <h1 class="h-contact" >  Age:</h1>       <input  class="form" type="number" maxlength="2" pattern="\d{10}" name="age" placeholder="Enter age "required>
+        <h1 class="h-contact" >  Skill:</h1>     <input class="form"  type="text" name="skills" placeholder="select your skill" required>
+        <h1 class="h-contact" >  Education:</h1> <input class="form"  type="text" name="edu" placeholder="Enter your qualifications" required>
+        <h1 class="h-contact" >  Image Url:</h1> <input class="form"  type="text" name="photo" placeholder="Image Url" required>
+        <h1 class="h-contact"> Tell me something about Yourself!</h1>
+                                                 <textarea class="form" name="description" placeholder="Write something..." style="height:200px"required></textarea >     
+            <div id="submit-btn" class="center ">
+                <button class="btn ">submit</button>
+             </div>
+    </form>
+
+<%- include ('footer') %> 

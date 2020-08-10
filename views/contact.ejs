@@ -1,0 +1,17 @@
+<%- include ('header') %>
+<div id="container">
+   <h1 class="center h-primary">Contact Us </h1>
+</div>
+
+<form id="contact" action="/contact">
+   <h1 class="h-contact" >  Name:</h1>      <input class="form"  type="text" name="username" placeholder="Enter Name" required>
+   <h1 class="h-contact" >  Email:</h1>     <input class="form"  type="email" name="useremail" placeholder="Enter Email Id"required>
+   <h1 class="h-contact" >  Phone No.:</h1> <input  class="form" type="text" maxlength="10" pattern="\d{10}" name="userphone" placeholder="Enter phone numer"required>
+   <h1 class="h-contact" >  Message:</h1>   <textarea class="form" name="Message" placeholder="Write something..." style="height:200px"></textarea required>   
+   <div id="submit-btn" class="center ">
+      <button class="btn ">submit</button>
+   </div>
+</form>
+
+
+<%- include ('footer') %> 
