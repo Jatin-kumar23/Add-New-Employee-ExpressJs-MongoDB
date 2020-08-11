@@ -159,6 +159,11 @@ app.get('/applynow', (req, res)=>{
         })
         
 
-app.listen(4000, function(){ 
-console.log('listining to port 4000') 
-}); 
+// app.listen(4000, function(){ 
+// console.log('listining to port 4000') 
+// }); 
+
+var port = process.env.PORT || 4000;
+server.listen(port, function() {
+    console.log("App is running on port " + port);
+});
